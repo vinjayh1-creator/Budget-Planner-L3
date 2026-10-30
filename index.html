@@ -1418,6 +1418,7 @@ nav button.active{background:var(--soft);color:var(--primary);}
   .pokemon-finance-grid strong{font-size:14px;}
 }
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="app">
@@ -4363,4 +4364,16 @@ html body .view .toggle button{padding:6px 12px!important;font-size:12px!importa
 }
 html body .snapshot-input-wrap{background:var(--soft)!important;border:0!important;box-shadow:none!important;border-radius:10px!important;padding:0 0 0 10px!important}
 html body .snapshot-input-wrap input{background:transparent!important;padding-left:4px!important}
+</style>
+
+<style id="v4-polish">
+html body,html body button,html body input,html body select,html body textarea,html body h1,html body h2,html body h3{font-family:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif!important;letter-spacing:-.01em}
+html body h1,html body h2,html body .stat-value{letter-spacing:-.025em;font-weight:700}
+@media(max-width:700px){
+ html body .bottom-nav{bottom:0!important;padding:4px 8px max(2px,calc(env(safe-area-inset-bottom) * .45))!important}
+ html body .bottom-nav button,html body .bottom-nav button:nth-child(n){height:46px!important;min-height:46px!important}
+ html body main{padding-bottom:calc(66px + env(safe-area-inset-bottom) * .45)!important}
+}
+html body .app-toast{transform:translate(-50%,calc(-100% - env(safe-area-inset-top) - 40px))!important;opacity:0;visibility:hidden;pointer-events:none;transition:transform .35s cubic-bezier(.2,.8,.2,1),opacity .25s,visibility 0s .35s!important}
+html body .app-toast.show{transform:translate(-50%,0)!important;opacity:1;visibility:visible;transition:transform .35s cubic-bezier(.2,.8,.2,1),opacity .2s!important}
 </style>
